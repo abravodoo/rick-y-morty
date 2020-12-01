@@ -1,0 +1,22 @@
+
+<div class="col-md-12">
+    <div class="card text-center">
+        <div class="card-header">
+            {{ episodedata.name }}
+        </div>
+        <div class="card-body">
+            <p>{{ episodedata.name }}</p>
+            <p>Emision: {{ episodedata.air_date }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12" >
+    <h3>characters included</h3>  
+    <div class="card text-center" >
+        <ul *ngFor = "let character of episodedata.characters">
+            <li>{{ character }}</li>
+        </ul>    
+    </div>
+
+</div>

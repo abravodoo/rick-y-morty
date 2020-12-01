@@ -1,0 +1,14 @@
+<div class="col-md-4" *ngFor= "let character of characterList">
+    <div class="card text-center">
+        <div class="card-header">
+            {{ character.name }}
+        </div>
+        <img src = "{{character.image}}" class="card-img-top">
+        <div class="card-body">
+            <p>{{ character.specie }}</p>
+            <a routerLink="/character/{{character.id}}" class="btn btn-info btn-block">More Info</a>
+        </div>
+        
+    </div>
+</div>
+
